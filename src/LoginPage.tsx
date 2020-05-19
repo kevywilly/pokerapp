@@ -18,7 +18,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import {AuthAPI} from "./auth/auth.api";
 
 
-const LoginPage = () => {
+const LoginPage = (props: {exampleprop?: string}) => {
 
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
@@ -49,7 +49,7 @@ const LoginPage = () => {
                                 <LockOutlinedIcon color="primary"/>
                             </Avatar>
                             <Typography component="h1" variant="h5">
-                                Sign in
+                                Sign in {props.exampleprop}
                             </Typography>
                         </div>
 

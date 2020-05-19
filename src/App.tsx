@@ -40,7 +40,7 @@ const App = () =>  {
   return (
     <div className="App">
       {
-        currentUser ? (<p>{currentUser.username}</p>) : (<div><LoginPage/></div>)
+        currentUser ? (<p>{currentUser.username}</p>) : (<div><LoginPage exampleprop="Hey Adam!"/></div>)
       }
     </div>
   );
